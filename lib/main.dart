@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -21,9 +20,9 @@ class _HomeState extends State<Home> {
    var image=await ImagePicker.pickImage(source: ImageSource.camera,maxHeight: 500.0,maxWidth: 300.0);
    setState(() {
     _image=image; 
-   });
+   }
+   );
  }
- 
  
   @override
   Widget build(BuildContext context) {
